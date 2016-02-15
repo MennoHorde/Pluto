@@ -1,0 +1,50 @@
+body {
+    background: #6A6A6A;
+}
+
+.page-break {
+    background: #FFF;
+    max-width: 200mm;
+    padding: 5mm;
+    margin: auto;
+    page-break-after: right;
+}
+
+td {
+    font-size: 11px;
+}
+
+.dark-gray {
+    color: #9C9C9C !important;
+    padding: 10px 5px 0 5px; 
+    vertical-align: bottom;
+}
+
+
+@media print {
+    @page { 
+        margin: 5mm 0mm;
+    }
+
+    body { 
+        padding-top: 0; 
+    }
+
+    #content { 
+        margin-top: 0; 
+    }
+
+    .dark-gray { 
+        color: #9C9C9C !important;
+        padding: 10px 5px 0 5px; 
+        vertical-align: bottom;
+    }
+
+    td { 
+        font-size: 11px; 
+    }
+
+    .page-break { 
+        display: block; page-break-after: right; 
+    }
+}
